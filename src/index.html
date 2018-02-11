@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
+
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <meta charset="utf-8">
   <title>Quiz</title>
@@ -12,4 +13,19 @@
 <body>
   <app-root></app-root>
 </body>
+
+<script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyASzZcx1JhedHwUJUV23WXJgZsqL97QA3c",
+    authDomain: "ngrx-quiz.firebaseapp.com",
+    databaseURL: "https://ngrx-quiz.firebaseio.com",
+    projectId: "ngrx-quiz",
+    storageBucket: "ngrx-quiz.appspot.com",
+    messagingSenderId: "989774156749"
+  };
+  firebase.initializeApp(config);
+</script>
+
 </html>
