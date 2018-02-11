@@ -15,7 +15,7 @@ import {
     takeUntil,
     catchError,
   } from 'rxjs/operators';
-import { Question } from '../../question/question.model';
+import { Question } from '../question/question.model';
 
 import * as scoreActions from './score.action';
 

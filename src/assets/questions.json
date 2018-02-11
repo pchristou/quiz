@@ -16,8 +16,8 @@
     },
     {
         "id" : 4,
-        "question" : "Amazon was founded in 1992.",
-        "answer" : false
+        "question" : "Amazon was founded in 1994.",
+        "answer" : true
     },
     {
         "id" : 5,
@@ -56,16 +56,6 @@
     },
     {
         "id" : 12,
-        "question" : "Amazon owns Lovefilm.",
-        "answer" : true
-    },
-    {
-        "id" : 13,
-        "question" : "Amazon Kindle was launched in November 2007.",
-        "answer" : true
-    },
-    {
-        "id" : 14,
         "question" : "Amazon owns part of Dropbox.",
         "answer" : false
     }

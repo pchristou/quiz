@@ -6,7 +6,7 @@ html { font-family: 'Roboto', sans-serif; }
 .horizontal {
     display:inline-block;
     text-align:center;
-    width: 9%;
+    width: 7%;
     margin-right:5px;
     margin-bottom:5px;
 }
@@ -15,24 +15,32 @@ html { font-family: 'Roboto', sans-serif; }
     width: 200px;
     margin:0px auto; 
 }
+
 .score-container {
     text-align: center;
+}
+
+#true-false-container {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+#true-false-container > button {
+    font-size: 20px;
 }
 
 .question-container {
     text-align: center;
     padding: 50px;
-    font-size: 50px;
-    height: 100px; 
 }
 
-#true-false-container {
-    text-align: center;
+.spacer {
+    display: inline-block;
 }
 
 .trueFalseButtons {
-    min-height: 150px;
-    min-width: 350px !important;
+    min-width: 300px !important;
 }
 
 .green {
@@ -45,4 +53,46 @@ html { font-family: 'Roboto', sans-serif; }
 
 .grey {
     background-color: #3c3a37;
+}
+
+/* Mobile */
+@media (min-width: 400px) {
+    .trueFalseButtons {
+        min-height: 100px;
+    }
+
+    .question-container {
+        font-size: 20px;
+    }
+
+    .spacer {
+        padding: 20px;
+    }
+
+    .question-container {
+        height: 150px;
+    }
+}
+
+/* Desktop */
+@media (min-width: 850px) {
+    /* How tall to make the TRUE and FALSE buttons */
+    .trueFalseButtons {
+        min-height: 150px;
+    }
+
+    /* question font size */
+    .question-container {
+        font-size: 50px;
+    }
+
+    /* space between TRUE and FALSE buttons */
+    .spacer {
+        padding: 5px;
+    }
+
+    /* How far down to push the TRUE and FALSE buttons*/
+    .question-container {
+        height: 100px;
+    }
 }

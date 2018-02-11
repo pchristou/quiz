@@ -1,5 +1,5 @@
 import { Action } from '@ngrx/store';
-import { Question } from '../../question/question.model';
+import { Question } from './question.model';
 import { QuestionActions, QuestionActionTypes, LoadQuestionAction, LoadQuestionSuccessAction, LoadQuestionFailedAction } from './question.action';
 
 export interface State {

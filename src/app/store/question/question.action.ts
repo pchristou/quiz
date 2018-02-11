@@ -1,5 +1,5 @@
 import { Action } from '@ngrx/store';
-import { Question } from '../../question/question.model';
+import { Question } from './question.model';
 
 /**
  * For each action type in an action group, make a simple

@@ -6,7 +6,7 @@ import { ScoreTrackerComponent } from './score-tracker.component';
 import { ScoreDialogComponent } from './score-dialog.component';
 
 import { MaterialModule } from './material.module';
-import { QuestionService } from './question/question-service';
+import { QuestionService } from './store/question/question.service';
 import { HttpClientModule } from '@angular/common/http';
 import { StoreModule, INITIAL_STATE } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';

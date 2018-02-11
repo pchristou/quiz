@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { QuestionService } from './question/question-service';
+import { QuestionService } from './store/question/question.service';
 import { OnInit } from '@angular/core/src/metadata/lifecycle_hooks';
-import { Question } from './question/question.model';
+import { Question } from './store/question/question.model';
 import { Observable } from 'rxjs/Rx';
 
 // ACTIONS

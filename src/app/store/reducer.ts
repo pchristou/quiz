@@ -8,19 +8,16 @@ import {
   } from '@ngrx/store';
   import { environment } from '../../environments/environment';
   import * as score from './score/score.reducer';
-  import * as ui from './ui/ui.reducer';
   import * as question from './question/question.reducer';
 import { GameStateActionTypes } from './game-state.action';
   
 export interface State {
     score : score.State,
-    ui : ui.State;
     question : question.State
 }
 
 export const reducers: ActionReducerMap<State> = {
     score: score.reducer,
-    ui: ui.reducer,
     question: question.reducer
 };
 

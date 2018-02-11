@@ -5,8 +5,8 @@ import { Actions, Effect } from '@ngrx/effects';
 
 import { map, switchMap } from 'rxjs/operators';
 
-import { Question } from '../../question/question.model';
-import { QuestionService } from '../../question/question-service';
+import { Question } from './question.model';
+import { QuestionService } from './question.service';
 
 import * as fromRoot from '../reducer'
 import * as questionActions from './question.action'
