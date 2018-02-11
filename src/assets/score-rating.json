@@ -1,0 +1,30 @@
+[
+    {
+        "id" : 1,
+        "name" : "Novice Amazonian",
+        "low" : 0,
+        "high" : 49,
+        "img" : "novice.png"
+    },
+    {
+        "id" : 2,
+        "name" : "So-so Amazonian",
+        "low" : 50,
+        "high" : 74,
+        "img" : "so-so.png"
+    },
+    {
+        "id" : 3,
+        "name" : "Good Amazonian",
+        "low" : 75,
+        "high" : 99,
+        "img" : "good.png"
+    },
+    {
+        "id" : 4,
+        "name" : "Super Amazonian",
+        "low" : 100,
+        "high" : 100,
+        "img" : "super.png"
+    }
+]

@@ -1,1 +1,48 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+html { font-family: 'Roboto', sans-serif; }
+
+.horizontal {
+    display:inline-block;
+    text-align:center;
+    width: 9%;
+    margin-right:5px;
+    margin-bottom:5px;
+}
+
+.center {
+    width: 200px;
+    margin:0px auto; 
+}
+.score-container {
+    text-align: center;
+}
+
+.question-container {
+    text-align: center;
+    padding: 50px;
+    font-size: 50px;
+    height: 100px; 
+}
+
+#true-false-container {
+    text-align: center;
+}
+
+.trueFalseButtons {
+    min-height: 150px;
+    min-width: 350px !important;
+}
+
+.green {
+    background-color: #68c000;
+}
+
+.red {
+    background-color: #d33b3b;
+}
+
+.grey {
+    background-color: #3c3a37;
+}

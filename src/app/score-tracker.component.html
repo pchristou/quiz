@@ -1,0 +1,15 @@
+<div class="score-container">
+
+        <div 
+                *ngFor="let item of Arr(numberOfQuestions).fill(1);let i=index" 
+                class="horizontal" 
+                [ngClass]="{ 
+                        'green' : answerIsCorrect[i] == true, 
+                        'red' : answerIsCorrect[i] == false, 
+                        'grey' : answerIsCorrect[i] == undefined 
+                        }"
+                >
+                &nbsp;       
+        </div>
+
+</div>

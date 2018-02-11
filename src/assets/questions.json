@@ -1,0 +1,72 @@
+[
+    {
+        "id" : 1,
+        "question" : "Amazon has over 500,000 employees.",
+        "answer" : true
+    },
+    {
+        "id" : 2,
+        "question" : "Amazon was originally known as Cadabra.",
+        "answer" : true
+    },
+    {
+        "id" : 3,
+        "question" : "In its early days, Amazon used to sell nothing but VHS tapes.",
+        "answer" : false
+    },
+    {
+        "id" : 4,
+        "question" : "Amazon was founded in 1992.",
+        "answer" : false
+    },
+    {
+        "id" : 5,
+        "question" : "Amazon started off as an online bookstore.",
+        "answer" : true
+    },
+    {
+        "id" : 6,
+        "question" : "Amazon was founded in Philadelphia.",
+        "answer" : false
+    },
+    {
+        "id" : 7,
+        "question" : "Typing AtoZ.com into your browser will redirect you to Amazon.com.",
+        "answer" : false
+    },
+    {
+        "id" : 8,
+        "question" : "Typing relentless.com into your browser will redirect you to Amazon.com.",
+        "answer" : true
+    },
+    {
+        "id" : 9,
+        "question" : "Amazon was founded by Jeff Bezos.",
+        "answer" : true
+    },
+    {
+        "id" : 10,
+        "question" : "One of the reasons the Amazon name was chosen, was because website listings used to be in alphabetical order.",
+        "answer" : true
+    },
+    {
+        "id" : 11,
+        "question" : "Amazon owns Netflix.",
+        "answer" : false
+    },
+    {
+        "id" : 12,
+        "question" : "Amazon owns Lovefilm.",
+        "answer" : true
+    },
+    {
+        "id" : 13,
+        "question" : "Amazon Kindle was launched in November 2007.",
+        "answer" : true
+    },
+    {
+        "id" : 14,
+        "question" : "Amazon owns part of Dropbox.",
+        "answer" : false
+    }
+]
