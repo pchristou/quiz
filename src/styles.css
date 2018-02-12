@@ -27,16 +27,12 @@ html { font-family: 'Roboto', sans-serif; }
 }
 
 #true-false-container > button {
-    font-size: 20px;
+   font-size: 20px;
 }
 
 .question-container {
     text-align: center;
     padding: 50px;
-}
-
-.spacer {
-    display: inline-block;
 }
 
 .trueFalseButtons {
@@ -56,7 +52,7 @@ html { font-family: 'Roboto', sans-serif; }
 }
 
 /* Mobile */
-@media (min-width: 400px) {
+@media (min-width: 300px) {
     .trueFalseButtons {
         min-height: 100px;
     }
@@ -74,11 +70,35 @@ html { font-family: 'Roboto', sans-serif; }
     }
 }
 
+/* Tablet */
+@media (min-width: 680px) {
+    .trueFalseButtons {
+        min-height: 100px;
+    }
+
+    .question-container {
+        font-size: 30px;
+    }
+
+    .spacer {
+        padding: 20px;
+    }
+
+    .question-container {
+        height: 150px;
+    }
+}
+
+
 /* Desktop */
-@media (min-width: 850px) {
+@media (min-width: 900px) {
     /* How tall to make the TRUE and FALSE buttons */
     .trueFalseButtons {
         min-height: 150px;
+    }
+
+    #true-false-container {
+        min-width: 630px !important;
     }
 
     /* question font size */
@@ -89,10 +109,11 @@ html { font-family: 'Roboto', sans-serif; }
     /* space between TRUE and FALSE buttons */
     .spacer {
         padding: 5px;
+        display: inline-block;
     }
 
     /* How far down to push the TRUE and FALSE buttons*/
     .question-container {
-        height: 100px;
+        height: 200px;
     }
 }
