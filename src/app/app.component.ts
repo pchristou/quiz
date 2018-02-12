@@ -19,7 +19,6 @@ import { ScoreDialogComponent } from './score-dialog.component';
 import { ScoreService } from './score-service';
 import { ScoreRating } from './score-rating';
 import { Score } from './store/score/score.model';
-import { ViewContainerRef } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -37,9 +36,7 @@ export class AppComponent implements OnInit {
     public scoreService : ScoreService, 
     public questionService : QuestionService, 
     private store : Store<fromRoot.State>,
-    public dialog: MatDialog,
-    public viewRef : ViewContainerRef 
-  ) {}
+    public dialog: MatDialog) {}
 
   ngOnInit() {
 
@@ -52,9 +49,7 @@ export class AppComponent implements OnInit {
   }
 
   getQuestion() {
-    this.viewRef.clear();
     this.store.dispatch({ type: QuestionActionTypes.LOAD_QUESTION });
-    this.viewRef.clear();
   }
 
   answerSelected(answer : any){
