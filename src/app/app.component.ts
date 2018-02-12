@@ -19,6 +19,7 @@ import { ScoreDialogComponent } from './score-dialog.component';
 import { ScoreService } from './score-service';
 import { ScoreRating } from './score-rating';
 import { Score } from './store/score/score.model';
+import { ChangeDetectorRef } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -36,7 +37,9 @@ export class AppComponent implements OnInit {
     public scoreService : ScoreService, 
     public questionService : QuestionService, 
     private store : Store<fromRoot.State>,
-    public dialog: MatDialog) {}
+    public dialog: MatDialog,
+    public cdr : ChangeDetectorRef
+  ) {}
 
   ngOnInit() {
 
@@ -50,6 +53,8 @@ export class AppComponent implements OnInit {
 
   getQuestion() {
     this.store.dispatch({ type: QuestionActionTypes.LOAD_QUESTION });
+
+    this.cdr.detectChanges();
   }
 
   answerSelected(answer : any){
