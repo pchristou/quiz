@@ -68,7 +68,7 @@ export class AppComponent implements OnInit {
     setTimeout(() => {
       console.log('reactivate'); 
       this.showQuestionContainer = true
-      }, 10);
+      }, 1);
 
   }
 
