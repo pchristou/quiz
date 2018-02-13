@@ -47,8 +47,8 @@ export class AppComponent implements OnInit {
       });
   });
 
-  if(this.question$)
-  this.question$.subscribe(q => console.log('Qu', q));
+  if(this.store)
+  this.store.subscribe(s => console.log('store state', s));
 
   }
 
