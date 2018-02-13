@@ -64,10 +64,11 @@ export class AppComponent implements OnInit {
 
     this.showQuestionContainer = false;
     this.store.dispatch({ type: QuestionActionTypes.LOAD_QUESTION });
+    
     setTimeout(() => {
       console.log('reactivate'); 
       this.showQuestionContainer = true
-      , 2000 });
+      }, 10);
 
   }
 
