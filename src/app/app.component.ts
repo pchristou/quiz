@@ -41,14 +41,8 @@ export class AppComponent implements OnInit {
     public zone : NgZone
   ) {
 
-    this.store.subscribe((state) => {
-      this.zone.run(() => {
-          console.log('enabled time travel');
-      });
-  });
-
-  if(this.store)
-  this.store.subscribe(s => console.log('store state', s));
+    if(this.store)
+    this.store.subscribe(s => console.log('store state', s));
 
   }
 
@@ -63,10 +57,14 @@ export class AppComponent implements OnInit {
     this.answerCorrectOrNot$ = this.store.pipe(select(fromRoot.selectCorrectAnswersOrNot));
   }
 
+  
+  showQuestionContainer = true;
+  
   getQuestion() {
 
-
+    this.showQuestionContainer = false;
     this.store.dispatch({ type: QuestionActionTypes.LOAD_QUESTION });
+    setTimeout(this.showQuestionContainer = true, 1);
 
   }
 

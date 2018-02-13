@@ -15,7 +15,7 @@
     <!--
     <button (click)="openSummaryBox()">Open Dialog</button>
     -->
-    <div class="question-container">
+    <div *ngIf="showQuestionContainer" class="question-container">
 
       {{ (question$ | async)?.question }}
 
