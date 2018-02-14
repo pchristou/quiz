@@ -20,6 +20,11 @@
       {{ (question$ | async)?.question }}
 
     </div>
+    <div *ngIf="!showQuestionContainer" class="question-container">
+
+        Next question...
+  
+    </div>
 
     <div id="true-false-container">
       <button mat-raised-button color="primary" (click)="answerSelected(true)" class="trueFalseButtons">TRUE</button>
