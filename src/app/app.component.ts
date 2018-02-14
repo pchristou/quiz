@@ -62,13 +62,13 @@ export class AppComponent implements OnInit {
   
   getQuestion() {
 
-    this.showQuestionContainer = false;
+   // this.showQuestionContainer = false;
     this.store.dispatch({ type: QuestionActionTypes.LOAD_QUESTION });
     
-    setTimeout(() => {
-      console.log('reactivate'); 
-      this.showQuestionContainer = true
-      }, 1);
+    //setTimeout(() => {
+    //  console.log('reactivate'); 
+    //  this.showQuestionContainer = true
+     // }, 1);
 
   }
 
